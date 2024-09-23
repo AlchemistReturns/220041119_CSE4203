@@ -38,10 +38,10 @@ public:
         unit = tempUnit;
     }
 
-    double convert(const string targetUnit) {
+    void convert(const string targetUnit) {
         if (!isValidUnit(targetUnit)) {
             cout << "Invalid target unit. Please use 'Celsius', 'Fahrenheit', or 'Kelvin'." << endl;
-            return -1;
+            return;
         }
 
         double convertedValue = value;
@@ -66,7 +66,17 @@ public:
             }
         }
 
-        return convertedValue;
+        value = convertedValue;
+        unit = targetUnit;
+
+        return;
+    }
+
+    double getValue() {
+        return value;
+    }
+    string getUnit() {
+        return unit;
     }
 
     void print() {
@@ -80,11 +90,11 @@ int main() {
     temp.assign(100, "Celsius");
     temp.print();
 
-    double fahrenheit = temp.convert("Fahrenheit");
-    cout << "Converted to Fahrenheit: " << fahrenheit << " Fahrenheit." << endl;
+    temp.convert("Fahrenheit");
+    cout << "Converted to Fahrenheit: " << temp.getValue() << " " << temp.getUnit() << endl;
 
-    double kelvin = temp.convert("Kelvin");
-    cout << "Converted to Kelvin: " << kelvin << " Kelvin." << endl;
+    temp.convert("Kelvin");
+    cout << "Converted to Kelvin: " << temp.getValue() << " " << temp.getUnit() << endl;
 
     return 0;
 }
