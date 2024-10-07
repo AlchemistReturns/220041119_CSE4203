@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1728297053 source:c:\users\dell\desktop\cse 4302\lab 6\119_task3\main.cpp
+	<iostream>
+	"kelvin.h"
+	"celcius.h"
+	"farenhite.h"
+
+1728297443 c:\users\dell\desktop\cse 4302\lab 6\119_task3\kelvin.h
+
+1728297452 c:\users\dell\desktop\cse 4302\lab 6\119_task3\celcius.h
+	<iostream>
+
+1728297356 c:\users\dell\desktop\cse 4302\lab 6\119_task3\farenhite.h
+
+1728297383 source:c:\users\dell\desktop\cse 4302\lab 6\119_task3\celcius.cpp
+	"celcius.h"
+	"farenhite.h"
+	"kelvin.h"
+	<iostream>
+
+1728297464 source:c:\users\dell\desktop\cse 4302\lab 6\119_task3\farenhite.cpp
+	"celcius.h"
+	"farenhite.h"
+	"kelvin.h"
+	<iostream>
+
+1728297471 source:c:\users\dell\desktop\cse 4302\lab 6\119_task3\kelvin.cpp
+	"celcius.h"
+	"farenhite.h"
+	"kelvin.h"
+	<iostream>
+

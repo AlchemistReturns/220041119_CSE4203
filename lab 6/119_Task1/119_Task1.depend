@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1728293356 source:c:\users\dell\desktop\cse 4302\lab 6\119_task1\main.cpp
+	<iostream>
+	"classes.h"
+
+1728293408 c:\users\dell\desktop\cse 4302\lab 6\119_task1\classes.h
+	<iostream>
+
+1728293633 source:c:\users\dell\desktop\cse 4302\lab 6\119_task1\classes.cpp
+	"classes.h"
+	<iostream>
+
